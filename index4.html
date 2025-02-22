@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW - Página Web</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        header {
+            font-family: Arial;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            width: 100%;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 7px;
+            width: 100%;
+            text-align: center;
+        }
+        iframe {
+            width: 600px;
+            height: 300px;
+            border: none;
+            margin-left: 20px;
+        }
+        .logo {
+            width: 150px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 20px 0;
+        }
+        aside {
+            width: 590px;
+            margin: 10px;
+            background-color: black;
+            color: white;
+            padding: 7px;
+        }
+        .car-images {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .car-images img {
+            margin: 0 10px;
+            width: 400px;
+        }
+        h2 {
+            font-family: Arial;
+            color: #63b2f0;
+        }
+        h3 {
+            font-family: Arial;
+            font-size: 90%;
+            color: #616161;
+        }
+    </style>
+    <script>
+        function mostrarPagina() {
+            document.getElementById("iframeBMW").src = "https://www.bmw.com.mx/es/modelos.html?gad_source=1&gclid=CjwKCAiA5eC9BhAuEiwA3CKwQsulQrxBFoujfB0UDcgRKjyRfgNRiWFgQWTtHSZmcJHurGDUPpRqMhoCU78QAvD_BwE";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>BMW</h1>
+    </header>
+
+    <section>
+         <h2>Programacion Web I PRIM25</h2>
+         <h3>Evaluacion Practica Parcial I.</h3>
+         <h3>Profesora: M.C. Imelda Deyanira Hernandez Martinez</h3>
+         <h3>Alumno: Gabriel Jimenez Figueroa</h3>
+    </section>
+
+    <div class="content">
+        <aside>
+            <p>Conoce lo mejor de la industria automotriz, BMW.</p>
+        </aside>
+        <img src="https://cdn.pixabay.com/photo/2016/08/15/18/18/bmw-1596080_1280.png" class="logo" onclick="mostrarPagina()">
+        <iframe id="iframeBMW"></iframe>
+    </div>
+
+    <div class="car-images">
+        <img src="https://www.bmw.com.mx/content/dam/bmw/common/all-models/m-series/m8-gran-coupe/2022/navigation/bmw-m8-competition-gran-coupe-modelfinder.png" alt="Carro 1">
+        <img src="https://www.bmw.com.mx/content/dam/bmw/common/all-models/1-series/5-door/2024/navigation/bmw-1-series-sun-protection-modelfinder.png.asset.1717515242976.png" alt="Carro 2">
+        <img src="https://www.bmw.com.mx/content/dam/bmw/common/all-models/m-series/x3-m50/navigation/bmw-x-series-x3m50i-xdrive.png" alt="Carro 3">
+    </div>
+
+    <footer>
+        <p><i>Universidad Politecnica de San Luis Potosi</i></p>
+    </footer>
+    <p><i>&copy; 2025 BMW. Todos los derechos reservados.</i></p>
+</body>
+</html>
