@@ -1,121 +1,78 @@
-*{
-
-margin: 0;
-
-padding: 0;
-
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  color: #1c1c1c;
+  margin: 0;
+  padding: 20px;
 }
 
-
-
-.contenedor{
-
-display: flex;
-
-flex-direction: column;
-
-min-width: 100 vh;
-
-background: gray;
-
-font-family: arial;
-
+h1 {
+  text-align: center;
+  color: #d4af37; 
 }
 
-
-
-.encabezado{
-
-background: skyblue;
-
-color: white;
-
-padding: 25px ;
-
-margin: 5px ;
-
-text-align: center;
-
-font-family: arial;
-
+.chatbot-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #1c1c1c;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.6); 
+  padding: 20px;
 }
 
-
-
-.cotenido{
-
-display: flex;
-
-flex-direction: space-between;
-
-flex: 1;
-
-background:floralwhite;
-
+.chatbox {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9; 
+  border-radius: 5px;
 }
 
-
-
-.Texto1{
-
-padding: 15px;
-
-margin: 10px;
-
-background: forestgreen;
-
-border: 1px solid lightsalmon;
-
-box-shadow: 5px 5px 5px rgba(100, 50, 120, 0.5);
-
-flex: 1;
-
-
-
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  line-height: 1.4;
 }
 
-.Texto2{
-
-padding: 15px;
-
-margin: 10px;
-
-background: whitesmoke;
-
-border: 1px solid lightsalmon;
-
-box-shadow: 5px 5px 5px rgba(100, 50, 120, 0.5);
-
-flex: 1;
-
-
-
+.message.user {
+  background-color: #d4af37; 
+  color: #1c1c1c;
+  align-self: flex-end;
+  text-align: right;
 }
 
-
-
-
-
+.message.bot {
+  background-color: #e0e0e0; 
+  color: #000;
 }
 
-.pie{
-
-padding: 15px;
-
-border: 1px lightgray;
-
-background: gray;
-
+form {
+  display: flex;
 }
 
-@media(max-width:50px){
-
-.contenido{
-
-flex-direction: column;
-
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #999;
+  outline: none;
+  font-size: 14px;
 }
 
+button {
+  background-color: #d4af37; 
+  color: #1c1c1c;
+  border: none;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
 
-
+button:hover {
+  background-color: #c29e2d;
 }
