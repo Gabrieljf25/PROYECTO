@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario</title>
+  <link rel="stylesheet" href="styles18.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>¿Cómo eres tu?</h1>
+    <form id="quizForm">
+      <div class="question">
+        <label>1. ¿Cómo estas?</label><br />
+        <input type="radio" name="q1" value="2"> Feliz<br />
+        <input type="radio" name="q1" value="1"> Normal<br />
+        <input type="radio" name="q1" value="0"> Triste<br />
+      </div>
+
+      <div class="question">
+        <label>2. ¿Color favorito?</label><br />
+        <input type="radio" name="q2" value="1"> Azul<br />
+        <input type="radio" name="q2" value="1"> Rojo<br />
+        <input type="radio" name="q2" value="1"> Otro<br />
+      </div>
+
+      <div class="question">
+        <label>3. ¿Te gusta salir?</label><br />
+        <input type="radio" name="q3" value="2"> Mucho<br />
+        <input type="radio" name="q3" value="1"> A veces<br />
+        <input type="radio" name="q3" value="0"> Prefiero estar solo/a<br />
+      </div>
+
+      <div class="question">
+        <label>4. ¿Qué tan listo eres?</label><br />
+        <input type="radio" name="q4" value="2"> Muy bien<br />
+        <input type="radio" name="q4" value="1"> Más o menos<br />
+        <input type="radio" name="q4" value="0"> Poco<br />
+      </div>
+
+      <button type="button" onclick="evaluar()">Enviar</button>
+    </form>
+
+    <div id="resultado"></div>
+    <canvas id="grafico" width="400" height="200"></canvas>
+    <button id="btnPDF" onclick="generarPDF()">Descargar PDF</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script18.js"></script>
+</body>
+</html>
